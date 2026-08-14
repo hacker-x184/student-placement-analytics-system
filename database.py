@@ -172,3 +172,11 @@ def create_table_placement():
     """)
 
     mydb.commit()
+def db_query(query, params=None):
+    cursor.execute(query, params)
+
+    if query.strip().upper().startswith("SELECT"):
+        return cursor.fetchall()
+    else:
+        mydb.commit()
+        return "Query executed successfully."
