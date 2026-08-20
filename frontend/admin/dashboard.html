@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin dashboard | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div id="admin-shell"></div>
+    <main class="app-main">
+        <p class="eyebrow">Placement administration</p>
+        <div class="page-heading">
+            <div>
+                <h1>Institutional overview</h1>
+                <p>Monitor recruitment activity and placement outcomes across the institution.</p>
+            </div>
+        </div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div id="admin-content" aria-live="polite">Loading dashboard…</div>
+    </main>
+    <script type="module" src="../js/admin/dashboard.js"></script>
+</body>
+
+</html>

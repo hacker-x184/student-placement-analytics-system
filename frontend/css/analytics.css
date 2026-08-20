@@ -1,0 +1,97 @@
+.analytics-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.analytics-card {
+    padding: 1.35rem;
+}
+
+.analytics-card h2 {
+    margin: 0 0 1.2rem;
+    font-size: 1.1rem;
+}
+
+.bar-list {
+    display: grid;
+    gap: .9rem;
+}
+
+.bar-item {
+    display: grid;
+    grid-template-columns: 7rem 1fr 2.5rem;
+    align-items: center;
+    gap: .7rem;
+    font-size: .85rem;
+}
+
+.bar-track {
+    height: .6rem;
+    overflow: hidden;
+    background: var(--primary-light);
+    border-radius: 999px;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: inherit;
+}
+
+.bar-item strong {
+    text-align: right;
+}
+
+.data-note {
+    margin: 1rem 0 0;
+    color: var(--muted-text);
+    font-size: .8rem;
+}
+
+@media (max-width: 48rem) {
+
+    .analytics-stats,
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bar-width-16 {
+    width: 16%;
+}
+
+.bar-width-24 {
+    width: 24%;
+}
+
+.bar-width-42 {
+    width: 42%;
+}
+
+.bar-width-64 {
+    width: 64%;
+}
+
+.bar-width-72 {
+    width: 72%;
+}
+
+.bar-width-81 {
+    width: 81%;
+}
+
+.bar-width-86 {
+    width: 86%;
+}
+
+.bar-width-100 {
+    width: 100%;
+}

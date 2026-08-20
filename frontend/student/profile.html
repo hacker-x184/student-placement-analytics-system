@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My profile | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+    <div id="student-shell"></div>
+    <main class="app-main" id="main-content">
+        <p class="eyebrow">Student workspace</p>
+        <div class="page-heading">
+            <div>
+                <h1>My profile</h1>
+                <p>Keep this information current to improve job matching and eligibility checks.</p>
+            </div><button class="button button-secondary" type="button" disabled
+                title="Profile editing will be added with the API integration phase.">Edit profile</button>
+        </div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div id="profile-content" aria-live="polite">Loading profile…</div>
+    </main>
+    <script type="module" src="../js/student/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applications | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/applications.css">
+</head>
+
+<body>
+    <div id="student-shell"></div>
+    <main class="app-main" id="main-content">
+        <p class="eyebrow">Student workspace</p>
+        <div class="page-heading">
+            <div>
+                <h1>My applications</h1>
+                <p>Follow each application from submission through its latest update.</p>
+            </div>
+        </div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div id="applications-content" aria-live="polite">Loading applications…</div>
+    </main>
+    <script type="module" src="../js/student/applications.js"></script>
+</body>
+
+</html>

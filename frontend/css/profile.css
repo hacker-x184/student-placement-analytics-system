@@ -1,0 +1,98 @@
+.profile-layout {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 1rem;
+}
+
+.profile-card {
+    padding: 1.35rem;
+}
+
+.profile-card h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+}
+
+.profile-summary {
+    text-align: center;
+}
+
+.profile-avatar {
+    display: grid;
+    width: 4.5rem;
+    height: 4.5rem;
+    place-items: center;
+    margin: 0 auto 1rem;
+    color: var(--surface);
+    background: var(--primary);
+    border-radius: 50%;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.profile-summary h2 {
+    margin-bottom: .25rem;
+}
+
+.profile-summary p {
+    margin: 0;
+    color: var(--muted-text);
+}
+
+.detail-list {
+    display: grid;
+    gap: .75rem;
+}
+
+.detail-list div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.detail-list dt {
+    color: var(--muted-text);
+}
+
+.detail-list dd {
+    margin: 0;
+    font-weight: 700;
+    text-align: right;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.project-item,
+.internship-item {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.project-item:first-of-type,
+.internship-item:first-of-type {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.project-item h3,
+.internship-item h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.project-item p,
+.internship-item p {
+    margin: .35rem 0 0;
+    color: var(--muted-text);
+    font-size: .9rem;
+}
+
+@media (max-width: 50rem) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+}

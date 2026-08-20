@@ -1,0 +1,3 @@
+import { requireAdmin } from "../guards.js"; import { getAdminDevelopmentData } from "./data.js"; import { el, initAdminPage, pageError, table } from "./ui.js";
+function render(data) { document.querySelector("#admin-content").replaceChildren(table(["Company", "Sector", "Open jobs", "Status", ""], data.companies.map((c) => [c.name, c.sector, String(c.jobs), c.status, el("button", "button button-secondary", "Manage")] ))); }
+initAdminPage("companies"); if (requireAdmin()) getAdminDevelopmentData().then(render).catch((error) => { document.querySelector("#admin-content").replaceChildren(); pageError(error.message); });

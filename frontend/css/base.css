@@ -1,0 +1,132 @@
+:root {
+  --primary: #173f5f;
+  --primary-dark: #102f48;
+  --primary-light: #eaf2f8;
+  --accent: #14806f;
+  --accent-light: #e7f6f2;
+  --background: #f6f8fb;
+  --background-tint: #eef5fb;
+  --background-accent: #e8f6f3;
+  --surface: #ffffff;
+  --surface-subtle: #f7f9fc;
+  --text: #17212b;
+  --muted-text: #5f6f7f;
+  --inverse-text: #dbe6ef;
+  --border: #dce3eb;
+  --success: #178553;
+  --warning: #b76800;
+  --danger: #bb3e46;
+  --danger-background: #fff1f1;
+  --danger-border: #f3c9cc;
+  --focus: #276fa8;
+  --radius-sm: 0.5rem;
+  --radius: 0.875rem;
+  --radius-lg: 1.25rem;
+  --shadow-sm: 0 1px 3px rgb(23 33 43 / 8%);
+  --shadow: 0 12px 30px rgb(23 33 43 / 10%);
+  --header-background: rgb(255 255 255 / 94%);
+  --max-width: 72rem;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--primary);
+  text-underline-offset: 0.18em;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--surface);
+  background: var(--primary-dark);
+  border-radius: var(--radius-sm);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  max-width: 42rem;
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.section-copy {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: var(--muted-text);
+  font-size: 1.0625rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

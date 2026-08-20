@@ -1,0 +1,70 @@
+.prediction-layout {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 1rem;
+}
+
+.prediction-score {
+    display: grid;
+    min-height: 19rem;
+    place-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.prediction-score strong {
+    display: block;
+    color: var(--accent);
+    font-size: clamp(3.5rem, 10vw, 5rem);
+    letter-spacing: -.07em;
+}
+
+.prediction-score p {
+    margin: .5rem 0 0;
+    color: var(--muted-text);
+}
+
+.insight-card {
+    padding: 1.35rem;
+}
+
+.insight-card h2 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+}
+
+.insight-card ul {
+    display: grid;
+    gap: .75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.insight-card li {
+    padding-left: 1.1rem;
+    color: var(--muted-text);
+    position: relative;
+}
+
+.insight-card li::before {
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    content: "•";
+}
+
+.disclaimer {
+    margin: 1rem 0 0;
+    padding: .9rem;
+    color: var(--muted-text);
+    background: var(--primary-light);
+    border-radius: var(--radius-sm);
+    font-size: .9rem;
+}
+
+@media (max-width: 48rem) {
+    .prediction-layout {
+        grid-template-columns: 1fr;
+    }
+}

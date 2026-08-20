@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Recommendations | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/recommendations.css">
+</head>
+
+<body>
+    <div id="student-shell"></div>
+    <main class="app-main">
+        <p class="eyebrow">Student workspace</p>
+        <div class="page-heading">
+            <div>
+                <h1>Recommendations</h1>
+                <p>Explore backend-provided job matches and focused skill priorities.</p>
+            </div>
+        </div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div id="recommendation-content" aria-live="polite">Loading recommendations…</div>
+    </main>
+    <script type="module" src="../js/student/recommendations.js"></script>
+</body>
+
+</html>

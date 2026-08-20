@@ -1,0 +1,57 @@
+.application-table-wrap {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.application-table {
+    width: 100%;
+    min-width: 42rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.application-table th,
+.application-table td {
+    padding: 1rem 1.15rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.application-table th {
+    color: var(--muted-text);
+    font-size: .78rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.application-table td {
+    font-size: .92rem;
+}
+
+.application-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.status-badge {
+    display: inline-flex;
+    padding: .25rem .55rem;
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 750;
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+.status-interview,
+.status-offered {
+    color: var(--success);
+    background: var(--accent-light);
+}
+
+.status-rejected,
+.status-withdrawn {
+    color: var(--danger);
+    background: var(--danger-background);
+}

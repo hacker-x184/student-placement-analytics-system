@@ -1,0 +1,143 @@
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--background-tint), var(--background));
+}
+
+.auth-header {
+    padding: 1.25rem 0;
+}
+
+.auth-shell {
+    display: grid;
+    min-height: calc(100vh - 5rem);
+    place-items: center;
+    padding: 2rem 0 4rem;
+}
+
+.auth-card {
+    width: min(100%, 35rem);
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.auth-card h1 {
+    margin: 0;
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+    letter-spacing: -.04em;
+}
+
+.auth-intro {
+    margin: .75rem 0 1.75rem;
+    color: var(--muted-text);
+}
+
+.auth-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-field {
+    display: grid;
+    gap: .4rem;
+}
+
+.form-field label {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    min-height: 2.8rem;
+    padding: .65rem .75rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: var(--focus);
+    outline: 2px solid transparent;
+}
+
+.form-field input[aria-invalid='true'] {
+    border-color: var(--danger);
+}
+
+.input-with-action {
+    position: relative;
+}
+
+.input-with-action input {
+    padding-right: 4.5rem;
+}
+
+.input-action {
+    position: absolute;
+    top: 50%;
+    right: .25rem;
+    padding: .35rem .5rem;
+    color: var(--primary);
+    background: transparent;
+    border: 0;
+    border-radius: var(--radius-sm);
+    font-size: .82rem;
+    font-weight: 750;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.field-error {
+    margin: 0;
+    color: var(--danger);
+    font-size: .82rem;
+}
+
+.form-message {
+    margin: 0;
+    padding: .75rem .9rem;
+    color: var(--danger);
+    background: var(--danger-background);
+    border: 1px solid var(--danger-border);
+    border-radius: var(--radius-sm);
+    font-size: .9rem;
+}
+
+.form-message[data-message-type='success'] {
+    color: var(--success);
+    background: var(--accent-light);
+    border-color: var(--accent);
+}
+
+.auth-submit {
+    width: 100%;
+    margin-top: .35rem;
+}
+
+.auth-footer {
+    margin: 1.25rem 0 0;
+    color: var(--muted-text);
+    text-align: center;
+    font-size: .92rem;
+}
+
+.security-note {
+    margin: 1.25rem 0 0;
+    color: var(--muted-text);
+    font-size: .78rem;
+    text-align: center;
+}
+
+@media (max-width: 30rem) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

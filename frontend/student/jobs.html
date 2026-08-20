@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobs | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/jobs.css">
+</head>
+
+<body>
+    <div id="student-shell"></div>
+    <main class="app-main" id="main-content">
+        <p class="eyebrow">Student workspace</p>
+        <div class="page-heading">
+            <div>
+                <h1>Explore jobs</h1>
+                <p>Review role details and eligibility. Final eligibility is always determined by the backend.</p>
+            </div>
+        </div>
+        <div class="job-controls"><label class="visually-hidden" for="job-search">Search jobs</label><input
+                id="job-search" type="search" placeholder="Search jobs or companies"><label class="visually-hidden"
+                for="sector-filter">Filter by sector</label><select id="sector-filter">
+                <option value="">All sectors</option>
+            </select><label class="visually-hidden" for="sort-jobs">Sort jobs</label><select id="sort-jobs">
+                <option value="match">Sort by match</option>
+                <option value="package">Sort by package</option>
+            </select></div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div class="job-list" id="job-content" aria-live="polite">Loading jobs…</div>
+    </main>
+    <script type="module" src="../js/student/jobs.js"></script>
+</body>
+
+</html>

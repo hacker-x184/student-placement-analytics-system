@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | PlacePath</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div id="student-shell"></div>
+    <main class="app-main" id="main-content">
+        <p class="eyebrow">Student workspace</p>
+        <div class="page-heading">
+            <div>
+                <h1>Welcome back, <span data-student-name>Student</span></h1>
+                <p>Here is a concise view of your placement journey.</p>
+            </div>
+        </div>
+        <p class="page-message" data-page-message hidden role="alert"></p>
+        <div id="dashboard-content" aria-live="polite">Loading dashboard…</div>
+    </main>
+    <script type="module" src="../js/student/dashboard.js"></script>
+</body>
+
+</html>

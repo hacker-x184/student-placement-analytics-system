@@ -1,0 +1,5 @@
+import { renderAdminShell } from "../components.js";
+export function initAdminPage(active) { renderAdminShell(document.querySelector("#admin-shell"), active); }
+export function el(tag, className = "", text = "") { const node = document.createElement(tag); if (className) node.className = className; if (text) node.textContent = text; return node; }
+export function pageError(message) { const node = document.querySelector("[data-page-message]"); node.textContent = message; node.hidden = false; }
+export function table(headers, rows) { const wrap = el("div", "application-table-wrap"); const tableNode = el("table", "application-table"); const head = el("thead"); const tr = el("tr"); headers.forEach((header) => tr.append(el("th", "", header))); head.append(tr); const body = el("tbody"); rows.forEach((cells) => { const row = el("tr"); cells.forEach((cell) => { const td = el("td"); if (cell instanceof Node) td.append(cell); else td.textContent = cell; row.append(td); }); body.append(row); }); tableNode.append(head, body); wrap.append(tableNode); return wrap; }

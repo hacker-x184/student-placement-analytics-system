@@ -1,0 +1,62 @@
+.recommendation-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.recommendation-card {
+    padding: 1.35rem;
+}
+
+.recommendation-top {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.recommendation-card h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.recommendation-card p {
+    margin: .3rem 0 0;
+    color: var(--muted-text);
+}
+
+.recommendation-match {
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: 850;
+    white-space: nowrap;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.recommendation-grid h3 {
+    margin: 0 0 .6rem;
+    font-size: .9rem;
+}
+
+.priority-list {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--muted-text);
+}
+
+.priority-list li+li {
+    margin-top: .35rem;
+}
+
+@media (max-width: 38rem) {
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,85 @@
+.job-controls {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+    gap: .75rem;
+    margin-bottom: 1rem;
+}
+
+.job-controls input,
+.job-controls select {
+    min-height: 2.75rem;
+    padding: .6rem .7rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+}
+
+.job-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.job-card {
+    padding: 1.35rem;
+}
+
+.job-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.job-card h2 {
+    margin: .2rem 0 0;
+    font-size: 1.18rem;
+}
+
+.job-card p {
+    margin: 0;
+    color: var(--muted-text);
+}
+
+.job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.1rem 0;
+    color: var(--muted-text);
+    font-size: .9rem;
+}
+
+.job-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.match-score {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.eligibility {
+    color: var(--success);
+    font-weight: 750;
+}
+
+.eligibility.is-ineligible {
+    color: var(--danger);
+}
+
+@media (max-width: 38rem) {
+    .job-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .job-card-top,
+    .job-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
