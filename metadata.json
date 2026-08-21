@@ -1,0 +1,6 @@
+{
+  "name": "CareerLens",
+  "description": "College Placement & Hiring Intelligence Platform connecting students, colleges, and companies with recruitment management, analytics, and intelligent career insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
