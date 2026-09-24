@@ -142,7 +142,7 @@ Complete schema:
 - Authentication
 - Frontend-backend integration
 
-### Lucky — Frontend
+### Gufran  — Frontend
 - HTML/CSS/JavaScript
 - UI/UX
 - Login/Register
