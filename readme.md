@@ -244,6 +244,7 @@ Then create a Pull Request and merge into `main` after review.
 - Admin analytics dashboard
 - Python/FastAPI notifications
 - Cloud deployment
+fuck this project
 
 ## 📌 Project Philosophy
 
